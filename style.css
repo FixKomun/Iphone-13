@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(61, 61, 61);
+}
+
+/*NAV*/
+nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0% 20%;
+    min-height: 8vh;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+nav,
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.nav-links a,
+.nav-links button {
+    margin-left: 2rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 0.3rem 1.5rem;
+    font-size: 0.8rem;
+    background: #3056f6;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+/*FIRST PAGE Phone vidoe*/
+.first-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page-text {
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.first-page-subtitle {
+    font-size: 3rem;
+}
+
+.first-page-title {
+    font-size: 1.4rem;
+}
+
+.intro-video {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/*SECOND PAGE Blue smoke*/
+
+.second-page {
+    min-height: 125vh;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.smoke-video {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.second-text {
+    padding: 5% 20%;
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*THIRD PAGE Phone Split*/
+.third-page {
+    min-height: 120vh;
+    position: relative;
+    padding: 0% 20%;
+}
+
+.product-text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    background: white;
+}
+
+.phone-size {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.pro-size {
+    text-align: right;
+}
+
+.max-size {
+    text-align: left;
+}
+
+.product-images {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.large-phone {
+    position: relative;
+    transform: translateX(40%) scale(0.85);
+    z-index: 1;
+}
+
+.small-phone {
+    position: relative;
+    z-index: 2;
+    transform: translateX(-40%) scale(0.85);
+}
+
+.retina-line {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    font-weight: bold;
+}
+
+/*Forth page CAROUSEL*/
+
+.forth-page {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+
+}
+
+.purchase-left {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    background: white;
+}
+
+.phone-gallery {
+    display: flex;
+    align-self: flex-start;
+}
+
+.phone-gallery img {
+    transform: scale(0.8);
+}
+
+.phone-gallery-container {
+    min-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swatch-container {
+
+    text-align: center;
+}
+
+.swatches img {
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.swatch-container span {
+    font-size: 0.8rem;
+}
+
+.purchase-right {
+    flex: 1;
+    position: relative;
+    background: black;
+}
+
+.blue {
+    z-index: 2;
+}
+
+.purchase-right img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    transform-origin: bottom;
+
+}
+
+/*Fifth page - Phone Video*/
+.fifth-page {
+    min-height: 100vh;
+
+}
+
+.product-video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.product-info-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 0% 10rem;
+}
+
+.right-info,
+.left-info {
+    width: 20%;
+}
+
+.right-info h3,
+.left-info h3 {
+    padding: 3rem 0rem;
+    color: rgb(179, 179, 179);
+}
+
+.left-info span,
+.right-info span {
+    font-size: 1.7rem;
+    color: rgb(218, 218, 218);
+}
+
+/*Sixth page*/
+.sixth-page {
+    min-height: 100vh;
+    padding: 10% 20%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.portrait {
+    height: 70vh;
+}
+
+.phone-video {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+    transform: translate(-40%, -30%);
+}
+
+.phone-video img,
+.phone-video video {
+    position: absolute;
+    transform: scale(0.75);
+}
+
+.phone-video img {
+    z-index: 1;
+
+}
+
+.phone-video video {
+    left: 1rem;
+    top: 1rem;
+    border-radius: 1rem;
+}
+
+.photo-title {
+    font-size: 2rem;
+}
+
+.photo-subtitle {
+    font-size: 4rem;
+}
+
+.photo-description {
+    padding-top: 5%;
+}
